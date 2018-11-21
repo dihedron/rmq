@@ -23,7 +23,7 @@ func init() {
 }
 
 func main() {
-	server := flag.String("server", "", "the address of the server, including the vhost (e.g. amqp://user:passwd@server:5672/vhost)")
+	server := flag.String("url", "", "the url of the server, including the vhost (e.g. amqp://user:passwd@server:5672/vhost)")
 	queue := flag.String("queue", "", "the name of the queue to connect to")
 	flag.Parse()
 
